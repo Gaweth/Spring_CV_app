@@ -35,7 +35,7 @@
               <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>${title.birthday}</span></li>
               <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>${title.website}</span></li>
               <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>${title.phone}</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>${title.city}</span></li>
             </ul>
           </div>
           <div class="col-lg-6">
@@ -55,15 +55,14 @@
                class="btn-right btn btn-primary" role="button">Edytuj</a>
         </td>
 
-        </c:forEach>
+
 
         <p>
-          Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-          Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+<%--        <li><i class="bi bi-chevron-right"></i> <strong>o mnie:</strong> <span>${title.about}</span></li>--%>
         </p>
       </div>
     </div>
-
+    </c:forEach>
   </div>
 </section><!-- End About Section -->
 

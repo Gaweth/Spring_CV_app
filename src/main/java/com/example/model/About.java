@@ -13,19 +13,25 @@ public class About {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
   private String about;
-  private Date birthday;
+  private String birthday;
   private String website;
   private String phone;
   private int age;
   private String degree;
   private String email;
   private String freelancer;
+  private String city;
 
-  public About(){
+
+    public About(){
+
+    }
+
+  public About(Long id, String about, String birthday, String website, String phone, int age, String degree, String email, String freelancer, Long aboutId, String city){
 
   }
 
-    public About(Long id, String about, Date birthday, String website, String phone, int age, String degree, String email, String freelancer) {
+    public About(Long id, String about, String birthday, String website, String phone, int age, String degree, String email, String freelancer, String city) {
         this.id = id;
         this.about = about;
         this.birthday = birthday;
@@ -35,6 +41,16 @@ public class About {
         this.degree = degree;
         this.email = email;
         this.freelancer = freelancer;
+        this.city=city;
+
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public Long getId() {
@@ -53,11 +69,11 @@ public class About {
         this.about = about;
     }
 
-    public Date getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 

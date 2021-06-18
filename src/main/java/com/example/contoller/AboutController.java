@@ -4,6 +4,7 @@ package com.example.contoller;
 
 import com.example.model.About;
 import com.example.repository.AboutRepository;
+import com.example.service.AboutService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -15,9 +16,11 @@ import java.util.List;
 public class AboutController {
 
     private final AboutRepository aboutRepository;
+    private final AboutService aboutService;
 
-    public AboutController(AboutRepository aboutRepository) {
+    public AboutController(AboutRepository aboutRepository, AboutService aboutService) {
         this.aboutRepository = aboutRepository;
+        this.aboutService = aboutService;
     }
 
 
@@ -58,8 +61,18 @@ public String getAbout(Model model) {
     @RequestMapping(value = {"/about_edit/{id}"}, method = RequestMethod.POST)
     public RedirectView postEditAbout(@ModelAttribute About newAbout, @PathVariable("id") Long id) {
         aboutRepository.save(newAbout);
-        return new RedirectView("/about/");
+        return new RedirectView("/about");
     }
+
+//    //edit
+//    @RequestMapping(value = {"/about_edit/{id}"}, method = RequestMethod.POST)
+//    public RedirectView saveEditPerson(@ModelAttribute About about, @PathVariable("id") Long id) {
+//        aboutService.editAbout(about, id);
+//        return new RedirectView("/about_edit/{id}");
+//
+//    }
+
+
 //
 
 //
