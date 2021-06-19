@@ -2,10 +2,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <jsp:useBean id="now" class="java.util.Date"/>
 <%@ page contentType="text/html; charset=UTF-8" %>
-<%@include file="dynamic/css.jspf"%>
+<%@include file="../dynamic/css.jspf"%>
 <body>
 
-<%@include file="dynamic/navigationMenu.jspf"%>
+<%@include file="../dynamic/navigationMenu.jspf"%>
 
 
     <!-- ======= Contact Section ======= -->
@@ -45,7 +45,7 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="../forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -81,12 +81,12 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <%@include file="dynamic/footer.jspf"%>
+  <%@include file="../dynamic/footer.jspf"%>
   <!-- Vendor JS Files -->
-  <%@include file="dynamic/JavaScript.jspf"%>
+  <%@include file="../dynamic/JavaScript.jspf"%>
 
   <!-- Template Main JS File -->
-  <script src="../../resources/js/main.js"></script>
+  <script src="../../../resources/js/main.js"></script>
 
 </body>
 

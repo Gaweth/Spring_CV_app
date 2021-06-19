@@ -26,19 +26,11 @@ public class AboutController {
 
 
     @RequestMapping(value = "/abouts", method = RequestMethod.GET)
-    public String getSkills(){
+    public String getAbout(){
         return "about/about";
     }
 
 
-
-//    @GetMapping(value = "/about_edit")
-//    public String getAbout(Model model) {
-//        List<About> aboutList = aboutRepository.findAll();
-//        model.addAttribute("about", aboutList);
-//        return "about/about_edit";
-//
-//    }
 
     //get about page
 @RequestMapping(value = {"/about"}, method = RequestMethod.GET)
@@ -64,23 +56,8 @@ public String getAbout(Model model) {
         return new RedirectView("/about");
     }
 
-//    //edit
-//    @RequestMapping(value = {"/about_edit/{id}"}, method = RequestMethod.POST)
-//    public RedirectView saveEditPerson(@ModelAttribute About about, @PathVariable("id") Long id) {
-//        aboutService.editAbout(about, id);
-//        return new RedirectView("/about_edit/{id}");
-//
-//    }
 
 
-//
 
-//
-
-//    @RequestMapping(value = "/about", method = RequestMethod.POST)
-//    public RedirectView saveEditAbout(@ModelAttribute About newAbout, @PathVariable("id") Long id) {
-//        About.setAbout(newAbout);
-//
-//    }
 }
 

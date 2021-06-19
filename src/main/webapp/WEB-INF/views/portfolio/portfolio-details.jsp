@@ -2,7 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <jsp:useBean id="now" class="java.util.Date"/>
 <%@ page contentType="text/html; charset=UTF-8" %>
-<%@include file="dynamic/css.jspf"%>
+<%@include file="../dynamic/css.jspf"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,17 +15,17 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="../../resources/img/favicon.png" rel="icon">
-  <link href="../../resources/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../../../resources/img/favicon.png" rel="icon">
+  <link href="../../../resources/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <%@include file="dynamic/JavaScript.jspf"%>
+  <%@include file="../dynamic/JavaScript.jspf"%>
 
   <!-- Template Main CSS File -->
-  <link href="../../resources/css/style.css" rel="stylesheet">
+  <link href="../../../resources/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: iPortfolio - v3.3.0
@@ -41,7 +41,7 @@
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
   <!-- ======= Header ======= -->
-  <%@include file="dynamic/navigationMenu.jspf"%>
+  <%@include file="../dynamic/navigationMenu.jspf"%>
 
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
@@ -50,7 +50,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Portfoio Details</h2>
           <ol>
-            <li><a href="index.jsp">Home</a></li>
+            <li><a href="../index.jsp">Home</a></li>
             <li>Portfoio Details</li>
           </ol>
         </div>
@@ -69,15 +69,15 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="../../resources/img/portfolio/portfolio-details-1.jpg" alt="">
+                  <img src="../../../resources/img/portfolio/portfolio-details-1.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="../../resources/img/portfolio/portfolio-details-2.jpg" alt="">
+                  <img src="../../../resources/img/portfolio/portfolio-details-2.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="../../resources/img/portfolio/portfolio-details-3.jpg" alt="">
+                  <img src="../../../resources/img/portfolio/portfolio-details-3.jpg" alt="">
                 </div>
 
               </div>
@@ -110,13 +110,13 @@
 
   </main><!-- End #main -->
 
-  <%@include file="dynamic/footer.jspf"%>
+  <%@include file="../dynamic/footer.jspf"%>
   <!-- Vendor JS Files -->
-  <%@include file="dynamic/JavaScript.jspf"%>
+  <%@include file="../dynamic/JavaScript.jspf"%>
 
 
   <!-- Template Main JS File -->
-  <script src="../../resources/js/main.js"></script>
+  <script src="../../../resources/js/main.js"></script>
 
 </body>
 

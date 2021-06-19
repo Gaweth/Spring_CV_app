@@ -2,14 +2,14 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <jsp:useBean id="now" class="java.util.Date"/>
 <%@ page contentType="text/html; charset=UTF-8" %>
-<%@include file="dynamic/css.jspf"%>
+<%@include file="../dynamic/css.jspf"%>
 <body>
 
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
   <!-- ======= Header ======= -->
-  <%@include file="dynamic/navigationMenu.jspf"%>
+  <%@include file="../dynamic/navigationMenu.jspf"%>
 
  <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
@@ -83,13 +83,13 @@
 
   </main><!-- End #main -->
 
-  <%@include file="dynamic/footer.jspf"%>
+  <%@include file="../dynamic/footer.jspf"%>
   <!-- Vendor JS Files -->
-  <%@include file="dynamic/JavaScript.jspf"%>
+  <%@include file="../dynamic/JavaScript.jspf"%>
 
 
   <!-- Template Main JS File -->
-  <script src="../../resources/js/main.js"></script>
+  <script src="../../../resources/js/main.js"></script>
 
 </body>
 

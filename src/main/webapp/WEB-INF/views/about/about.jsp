@@ -1,8 +1,9 @@
 <%@include file="../dynamic/css.jspf"%>
+<%@taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+
 <body>
 
 <%@include file="../dynamic/navigationMenu.jspf"%>
-
 <!-- ======= About Section ======= -->
 <section id="about" class="about">
   <div class="container">
@@ -51,10 +52,15 @@
         <td><a href="#" role="button" class="btn btn-success btn-circle" data-toggle="modal" data-target="#umiejetnosci"><i class="fas
                                         fa-check"></i></a></td>
 
+
+
+        <sec:authorize access="hasRole('ADMIN')">
+
+
         <td><a href='<c:url value="/about_edit/${title.id}"/>'
                class="btn-right btn btn-primary" role="button">Edytuj</a>
         </td>
-
+        </sec:authorize>
 
 
         <p>
