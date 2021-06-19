@@ -14,24 +14,9 @@ public class AboutService {
     }
 
     public About getAbout(Long id){
-        return aboutRepository.findById(id).orElse(null);
+        return aboutRepository.findById(id);
     }
 
-//    public void editAbout(About about, Long id){
-//        About edit = new About(
-//            id,
-//            about.getAbout(),
-//            about.getBirthday(),
-//            about.getWebsite(),
-//            about.getPhone(),
-//            about.getAge(),
-//            about.getDegree(),
-//            about.getEmail(),
-//            about.getFreelancer(),
-//            about.getId()
-//        );
-//
-//
-//        }
+
     }
 

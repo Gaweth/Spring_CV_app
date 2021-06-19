@@ -17,8 +17,8 @@ public class Portfolio {
     private Long id;
     private String category;
     private String client;
-    @DateTimeFormat(fallbackPatterns = "DD-MM-YYYY")
-    private Date projectDate;
+
+    private String projectDate;
     private String projectUrl;
     private String aboutProject;
 
@@ -27,7 +27,7 @@ public class Portfolio {
     }
 
 
-    public Portfolio(Long id, String category, String client, Date projectDate, String projectUrl, String aboutProject) {
+    public Portfolio(Long id, String category, String client, String projectDate, String projectUrl, String aboutProject) {
         this.id = id;
         this.category = category;
         this.client = client;
@@ -60,11 +60,11 @@ public class Portfolio {
         this.client = client;
     }
 
-    public Date getProjectDate() {
+    public String getProjectDate() {
         return projectDate;
     }
 
-    public void setProjectDate(Date projectDate) {
+    public void setProjectDate(String projectDate) {
         this.projectDate = projectDate;
     }
 

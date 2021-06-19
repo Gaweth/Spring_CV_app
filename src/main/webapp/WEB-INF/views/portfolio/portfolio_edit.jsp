@@ -41,11 +41,14 @@
 <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
 <!-- ======= Header ======= -->
-<%@include file="dynamic/navigationMenu.jspf"%>
+<%@include file="../dynamic/navigationMenu.jspf"%>
 
 <!-- ======= Breadcrumbs ======= -->
 <section id="breadcrumbs" class="breadcrumbs">
     <div class="container">
+
+
+        <form method="post" action='<c:url value="/portfolio_edit/${portfolio.id}"/>'>
 
         <div class="d-flex justify-content-between align-items-center">
             <h2>Portfoio Details</h2>
@@ -89,10 +92,37 @@
                 <div class="portfolio-info">
                     <h3>Project information</h3>
                     <ul>
-                        <li><strong>Category</strong>: Web design</li>
-                        <li><strong>Client</strong>: ASU Company</li>
-                        <li><strong>Project date</strong>: 01 March, 2020</li>
-                        <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+
+                        <li>
+                        <p><span class=" title-s">category: </span> <span><input class="form-control"
+                                                                                 type="text"
+                                                                                 name="category"
+                                                                                 value="${portfolio.category}"></span>
+                        </li>
+
+                        <li>
+                            <p><span class=" title-s">Client: </span> <span><input class="form-control"
+                                                                                     type="text"
+                                                                                     name="client"
+                                                                                     value="${portfolio.client}"></span>
+                        </li>
+
+                        <li>
+                            <p><span class=" title-s">project date: </span> <span><input class="form-control"
+                                                                                     type="text"
+                                                                                     name="projectDate"
+                                                                                     value="${portfolio.projectDate}"></span>
+                        </li>
+
+                        <li>
+                            <p><span class=" title-s">Project url: </span> <span><input class="form-control"
+                                                                                     type="url"
+                                                                                     name="projectUrl"
+                                                                                     value="${portfolio.projectUrl}"></span>
+                        </li>
+
+
+
                     </ul>
                 </div>
                 <div class="portfolio-description">
@@ -103,7 +133,12 @@
                 </div>
             </div>
 
+            <input class="btn btn-dark pull-left" type="submit" value="Save"
+                   id="searchButton"></input>
+
+        </form>
         </div>
+
 
     </div>
 </section><!-- End Portfolio Details Section -->
